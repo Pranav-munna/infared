@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:src="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="?attr/actionBarSize"
+        android:layout_toRightOf="@+id/back"
+        android:padding="10dp"
+        android:src="@drawable/demo_logo" />
+
+    <TextView
+        android:id="@+id/add_p"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Add Payment"
+        android:textColor="@color/text_white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/card_det"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_p"
+        android:padding="10dp"
+        android:text="Card Details"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/card_type"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        style="@style/edit_text_stroke_add_hint_inputtype"
+        android:layout_below="@+id/card_det" />
+
+    <EditText
+        android:id="@+id/card_no"
+        style="@style/edit_text_stroke_add_hint_inputtype"
+        android:layout_below="@+id/card_type"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:digits=" 1234567890"
+        android:maxLength="22" />
+
+    <EditText
+        android:id="@+id/phone_no"
+        style="@style/edit_text_stroke_add_hint_inputtype"
+        android:layout_below="@+id/card_no"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:maxLength="10" />
+
+    <EditText
+        android:id="@+id/expiry_date"
+        style="@style/edit_text_stroke_add_hint_inputtype"
+        android:layout_below="@+id/phone_no"
+        android:hint="Expiry Date(mm/yy)"
+        android:inputType="date"
+        android:digits="/1234567890"
+        android:maxLength="5" />
+
+    <EditText
+        android:id="@+id/security_code"
+        style="@style/edit_text_stroke_add_hint_inputtype"
+        android:layout_below="@+id/expiry_date"
+        android:hint="Security Code"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/paymenty_button"
+        style="@style/white_button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Save Payment Method" />
+
+
+</RelativeLayout>

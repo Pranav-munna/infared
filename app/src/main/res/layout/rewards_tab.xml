@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1" />
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_black_translucent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Buy One, Get One Free"
+            android:textColor="@color/text_white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/background_black_translucent"
+        android:paddingEnd="2dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/redeem"
+            android:maxLines="1"
+            android:text="Points:20"
+            android:textColor="@color/text_white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/redeem"
+            style="@style/white_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="Redeem"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/redeem"
+            android:layout_marginTop="5dp"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:text="Come enjoy this limited free drinks offer at atlanta's premiere destination for night life. Receive a free drink when you purchase one with 20points "
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/expires"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:text="Expires:  11/21/2018"
+            android:textColor="@color/text_white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expires"
+            android:paddingBottom="5dp"
+            android:scrollbars="vertical"
+            android:text="Rules:  Valid one per customer, must be 21 and over to purchase"
+            android:textColor="@color/text_white"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

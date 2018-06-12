@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:src="@drawable/demo_logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Navigate Your Night."
+        android:textColor="@color/text_white"
+        android:textSize="36sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        style="@style/white_button_style"
+        android:text="Log In" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_signup"
+        style="@style/white_button_style"
+        android:text="Sign up" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".6" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1" />
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_black_translucent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Buy One, Get One Free"
+            android:textColor="@color/text_white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="at Opera with 20 points"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="3dp"
+        android:background="@color/background_black_translucent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/expires"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:text="Expires:  11/21/2018"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/valid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expires"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:text="*offer only valid on Friday from 7pm-9pm"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

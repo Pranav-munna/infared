@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:src="@drawable/demo_logo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:maxLines="1"
+        android:inputType="text"
+        style="@style/edit_text_stroke_add_hint_inputtype"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/edit_text_stroke_add_hint_inputtype"
+        android:hint="Password"
+        android:maxLines="1"
+        android:inputType="textWebPassword"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/login"
+        style="@style/white_button_style"
+        android:text="Log In" />
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/f_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:text="Forgot username?"
+            android:textAllCaps="true" />
+
+        <Button
+            android:id="@+id/f_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:text="Forgot password?"
+            android:textAllCaps="true" />
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

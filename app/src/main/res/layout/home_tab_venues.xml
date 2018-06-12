@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_filter" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_toRightOf="@+id/filter"
+            android:padding="10dp"
+            android:src="@drawable/demo_logo" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="6dp"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/venues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:gravity="center"
+            android:text="Venues"
+            android:textColor="@color/text_white"
+            android:textSize="30sp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/button_bar"
+            app:tabMode="scrollable"
+            android:isScrollContainer="true"
+            android:layout_below="@+id/venues"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_black" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button_bar" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/background_black"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Filter Venues By"
+            android:textColor="@color/text_white"
+            android:textSize="20dp" />
+
+        <CheckBox
+            style="@style/check_box_drawer"
+            android:text="Distance"
+            />
+
+        <View style="@style/line" />
+
+        <CheckBox
+            style="@style/check_box_drawer"
+            android:text="Favorites" />
+
+        <View style="@style/line" />
+
+        <CheckBox
+            style="@style/check_box_drawer"
+            android:text="Rating" />
+
+        <View style="@style/line" />
+
+        <CheckBox
+            style="@style/check_box_drawer"
+            android:text="Type" />
+
+        <View style="@style/line" />
+
+        <CheckBox
+            style="@style/check_box_drawer"
+            android:text="Wait Time" />
+
+        <View style="@style/line" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

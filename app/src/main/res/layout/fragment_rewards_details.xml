@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:src="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="?attr/actionBarSize"
+        android:layout_toRightOf="@+id/back"
+        android:padding="10dp"
+        android:src="@drawable/demo_logo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1" />
+
+    <LinearLayout
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_black_translucent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Buy One, Get One Free!"
+            android:textColor="@color/text_white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="The Porter Beer Bar"
+            android:textColor="@color/text_white"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1156 Euclid Ave NE,Atlanta, GA 30307"
+            android:textColor="@color/text_white"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="4"
+            android:padding="20dp"
+            android:scrollbars="vertical"
+            android:text="Come enjoy this limited free drink offer at Atlanta's premiere destination for night  life. Receive a free drink when you purchase one with 20points."
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_edit_text"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Points: 20"
+            android:textColor="@color/text_white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Price: $5"
+            android:textColor="@color/text_white"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_height="35dp"
+            android:id="@+id/purchase"
+            style="@style/white_button_style"
+            android:layout_width="180dp"
+            android:text="Purchase" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/expire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Expires: 11/21/2018"
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="3"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:scrollbars="vertical"
+            android:text="Rules: Valid one per customer, must be 21 and above to purchase."
+            android:textColor="@color/text_white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

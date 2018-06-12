@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Grey Goose Vodka"
+        android:textColor="@color/text_white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:text="Watch and earn 20 points"
+        android:textColor="@color/text_white"
+        android:textSize="16sp" />
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/points"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <!--<ImageView
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/points"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/round_stroke"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp" />-->
+
+</RelativeLayout>

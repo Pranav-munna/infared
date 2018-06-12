@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_black">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:src="@drawable/back_button" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="?attr/actionBarSize"
+        android:layout_toLeftOf="@+id/edit"
+        android:layout_toRightOf="@+id/back"
+        android:padding="10dp"
+        android:src="@drawable/demo_logo" />
+
+    <TextView
+        android:id="@+id/survay_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:gravity="center"
+        android:text="Survey"
+        android:textColor="@color/text_white"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/survay_"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/survay_"
+        android:layout_marginTop="40dp"
+        android:background="@color/background_black_translucent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="The Porter Beer Bar"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1156 Eudid Ave NE, Attanta GA 30307"
+            android:textColor="@color/text_white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finish_later"
+        android:paddingBottom="30dp"
+        android:layout_marginBottom="-20dp"
+        android:background="@color/background_black_translucent">
+
+        <TextView
+            android:id="@+id/s_headding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/line"
+            android:gravity="center"
+            android:text="Cover Charge"
+            android:paddingTop="10dp"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/select"
+            android:layout_width="150dp"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_white"
+            android:gravity="center"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/stroke_edit_text"
+            android:text="Select"
+            android:textAllCaps="false"
+            android:layout_below="@+id/s_headding" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/select_dec"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/select_arrow_back"/>
+
+            <TextView
+                android:id="@+id/count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 of 5"
+                android:textSize="18sp"
+                android:textColor="@color/text_white"/>
+
+            <ImageView
+                android:id="@+id/select_inc"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/select_arrow_forward"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/finish_later"
+        style="@style/white_button_style"
+        android:layout_above="@+id/submit"
+        android:text="Finish Later" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/white_button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="Submit" />
+
+
+</RelativeLayout>
